@@ -1,0 +1,29 @@
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/lib/prisma/generated/prisma"
+  moduleFormat    = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+
+model User {
+  id          String      @id @default(uuid())
+  name        String
+  email       String      @unique
+  password    String
+  telephones  Telephone[]
+  createdAt   DateTime    @default(now())
+  modifiedAt  DateTime    @updatedAt
+}
+
+model Telephone {
+  id        String @id @default(uuid())
+  number    String
+  areaCode  String
+  user      User   @relation(fields: [userId], references: [id])
+  userId    String
+}
