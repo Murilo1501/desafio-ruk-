@@ -58,6 +58,7 @@ export class AuthService {
       email: user.email,
       createdAt: user.createdAt,
       modifiedAt: user.modifiedAt,
+    
     };
 
     return jwtUser;

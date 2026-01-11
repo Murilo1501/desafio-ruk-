@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { CreateUserInput } from './dto/create-user.input';
-
 import { hash } from 'argon2';
 import { prisma } from '../lib/prisma/prisma';
 import { UserResponse } from './dto/response-user.create';
@@ -32,10 +31,19 @@ export class UserService {
         },
       };
     } catch (err) {
+      if (err.code === 'P2002') {
+        return {
+          error: {
+            status: 'error',
+            message: 'Email already exists',
+          },
+        };
+      }
+
       return {
         error: {
           status: 'error',
-          message: err.message,
+          message: err.message || 'Failed to create user',
         },
       };
     }
@@ -48,5 +56,15 @@ export class UserService {
     });
 
     return user;
+  }
+
+  async findAll()
+  {
+    const users = await prisma.user.findMany({
+      include:{telephones:true}
+    });
+
+    return users;
+   
   }
 }

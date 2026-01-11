@@ -27,4 +27,14 @@ export class UserResolver {
   me(@CurrentUser() user: User) {
     return user;
   }
+
+  @UseGuards(GqlJwtGuardGuard)
+  @Query(() => [User], { name: 'users' })
+  findAll() {
+    return this.userService.findAll();
+  }
+
+
+
+
 }
