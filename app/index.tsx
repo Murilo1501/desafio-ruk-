@@ -146,24 +146,7 @@ export default function LoginScreen() {
             {errors.password ? <Text style={styles.errorText}>{errors.password}</Text> : null}
           </View>
 
-          <View style={styles.optionsRow}>
-            <TouchableOpacity
-              style={styles.rememberContainer}
-              onPress={() => setRememberMe(!rememberMe)}
-              disabled={loading}
-            >
-              <View style={styles.checkbox}>
-                {rememberMe && (
-                  <Ionicons name="checkmark" size={14} color="#007AFF" />
-                )}
-              </View>
-              <Text style={styles.rememberText}>Remember me</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity disabled={loading}>
-              <Text style={styles.forgotText}>Forgot password?</Text>
-            </TouchableOpacity>
-          </View>
+         
 
           <TouchableOpacity
             style={[styles.signInButton, loading && styles.signInButtonDisabled]}
@@ -177,14 +160,8 @@ export default function LoginScreen() {
             )}
           </TouchableOpacity>
 
-          <View style={styles.signUpContainer}>
-            <Text style={styles.signUpText}>Don't have an account? </Text>
-          
-          </View>
-
           <View style={styles.logoContainer}>
             <Text style={styles.logoText}>RUK</Text>
-            <Text style={styles.logoSubtext}>SPORTING GOODS</Text>
           </View>
         </ScrollView>
       </KeyboardAvoidingView>
