@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# Desafio Node.js — Autenticação com GraphQL, JWT, Prisma e Docker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Demonstração Online
 
-1. Install dependencies
+### Backend — API GraphQL (Heroku)
 
-   ```bash
-   npm install
-   ```
+A API está disponível com Playground habilitado em:
 
-2. Start the app
+👉 **GraphQL Playground:**  
+https://limitless-journey-63719-354a6b958afb.herokuapp.com/graphql
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+### Frontend Web (Vercel)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Aplicação web desenvolvida com **React, Next.js, Tailwind e GraphQL Codegen**:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+👉 **Web :**  
+https://desafio-ruk-frontend-web.vercel.app
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## Organização das Branches
 
-```bash
-npm run reset-project
-```
+Os códigos do projeto estão organizados da seguinte forma no repositório:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- **Backend:** branch `main`
+- **Frontend Web:** branch `frontend-web`
+- **Aplicativo Mobile:** branch `desafio-ruk-app`
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Aplicativo Mobile (React Native + Expo)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
 
-Join our community of developers creating universal apps.
+## Como rodar o aplicativo (React Native + Expo)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Pré-requisitos
+
+Antes de rodar o aplicativo, você precisa ter instalado:
+
+- Node.js (versão 18 ou superior)
+- Expo CLI
+- Aplicativo **Expo Go** no celular (Android ou iOS)
+
+
+clone o repositorio 
+https://github.com/Murilo1501/desafio-ruk-.git
+
+acesse o diretorio 
+cd pasta
+
+Instale as  dependencias
+npm install 
+
+Inicialize o aplicativo
+npx expo start 
