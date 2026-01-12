@@ -45,7 +45,6 @@ Antes de rodar o aplicativo, você precisa ter instalado:
 - Expo CLI
 - Aplicativo **Expo Go** no celular (Android ou iOS)
 
-Instale o Expo CLI com:
 
 clone o repositorio 
 https://github.com/Murilo1501/desafio-ruk-.git
@@ -53,6 +52,8 @@ https://github.com/Murilo1501/desafio-ruk-.git
 acesse o diretorio 
 cd pasta
 
+Instale as  dependencias
 npm install 
 
+Inicialize o aplicativo
 npx expo start 
