@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desafio Node.js — Autenticação com GraphQL, JWT, Prisma e Docker
 
-## Getting Started
 
-First, run the development server:
+## Demonstração Online
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Backend — API GraphQL (Heroku)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A API está disponível com Playground habilitado em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+👉 **GraphQL Playground:**  
+https://limitless-journey-63719-354a6b958afb.herokuapp.com/graphql
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### Frontend Web (Vercel)
 
-To learn more about Next.js, take a look at the following resources:
+Aplicação web desenvolvida com **React, Next.js, Tailwind e GraphQL Codegen**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👉 **Web :**  
+https://desafio-ruk-frontend-web.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Organização das Branches
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Os códigos do projeto estão organizados da seguinte forma no repositório:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Backend:** branch `main`
+- **Frontend Web:** branch `frontend-web`
+- **Aplicativo Mobile:** branch `desafio-ruk-app`
+
+---
+
+## Aplicativo Mobile (React Native + Expo)
+
+
+
+## Como rodar o aplicativo (React Native + Expo)
+
+### Pré-requisitos
+
+Antes de rodar o aplicativo, você precisa ter instalado:
+
+- Node.js (versão 18 ou superior)
+- Expo CLI
+- Aplicativo **Expo Go** no celular (Android ou iOS)
+
+
+clone o repositorio 
+https://github.com/Murilo1501/desafio-ruk-.git
+
+acesse o diretorio 
+cd pasta
+
+Instale as  dependencias
+npm install 
+
+Inicialize o aplicativo
+npx expo start 
